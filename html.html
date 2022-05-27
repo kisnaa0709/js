@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        div1{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        div2{
+            
+            width: 45%;
+        }
+        button{
+            background: linear-gradient(rgba(255, 0, 0, 0.582) , rgba(255, 1, 213, 0.568) );
+            width: 40%;
+            height: 40px;
+        }
+        hr{
+            margin: 0%;
+            margin-left: 30px;
+            margin-right: 30px;
+            width: 1px;
+        }
+        hr.hr{
+            margin: 2%;
+            width: 100%;
+        }
+        .poker{
+            background-color: rgba(14, 133, 14, 0.945);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        div1.poker h2{
+            color: aliceblue;
+            font-style: italic;
+            font-size:x-large;
+        }
+        button.start{
+            background: goldenrod ;
+            font-size: large;
+            font-weight: bold;
+            color:rgba(14, 133, 14, 0.945);
+            border: none;
+            border-radius: 4px;
+            padding: 3px;
+            margin: 4px;
+            width: 14vw;
+        }
+    </style>
+</head>
+<body>
+    <div1>
+        <div2>
+            <h1>
+                Area
+            </h1>
+            <button onclick="my()">Click</button>
+            <h1>
+                Perimeter
+            </h1>
+            <button onclick="my1()">Click</button>
+        </div2>
+        <hr>
+        <div2>
+            <h2>
+            First Character of City Equal or Not
+            </h2>
+            <button onclick="city()">Click</button>
+            <h2>
+                Cities With Captilised first letter
+            </h2>
+            <button onclick="Cap()"> Click</button>
+            <h2>
+                City first letter vowel
+            </h2>
+            <button onclick="asdf()"> Click</button>    
+        </div2>
+    </div1>
+    <hr class="hr">
+    <div1>
+        <div2>
+            <h1>
+                Floyd triangle
+            </h1>
+            <button onclick="floyd()"> Click</button>
+        </div2>
+        <hr>
+        <div2>
+            <h1>People on board</h1>
+            <h2 id="log">0</h2>
+            <h4 id="save">Previous entries :</h4>
+            <button onclick="log()"> Click</button>
+            <button onclick="save()"> SAVE</button>
+        </div2>
+    </div1>
+    <hr class="hr">
+    <div1 class="poker">
+        <h1>
+            Black Jack Poker
+        </h1>
+        <h2 id="status">Start Game...</h2>
+        <h2 id="cards">Cards : </h2>
+        <h2 id="sum">Sum : </h2>
+        <div><button class="start" onclick="startGame()">Start</button></div>
+        <div><button class="start" onclick="renderGame()">Add Card</button></div>
+    </div1>
+
+
+
+
+    <script src="blackjack.js"></script>
+    <script src="peoplelog.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>
